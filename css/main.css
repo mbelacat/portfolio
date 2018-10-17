@@ -97,8 +97,66 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* ==========================================================================
+                              UTILITARY CLASSES
+      ========================================================================== */
 
 
+   .pink{
+     background-color: #f8a796;
+   }
+   .orange{
+     background-color: #fee8c9;
+   }
+   .lime{
+     background-color: lime;
+   }
+   .black{
+     background-color: black;
+   }
+   .grey{
+     background-color: grey;
+   }
+   .green{
+     background-color: #9ad0c2;
+   }
+   .yellow{
+     background-color: yellow;
+   }
+   .lightgrey{
+     background-color: lightgrey;
+   }
+   .flex{
+     display: flex;
+   }
+   .flex-dir-col{
+     flex-direction: column;
+   }
+   .flexJCC{
+     display: flex;
+     justify-content: center;
+   }
+   .flexJCSA{
+     display: flex;
+     justify-content: space-around;
+   }
+   .flexJCSB{
+     display: flex;
+     justify-content: space-between;
+   }
+   .flexJCEnd{
+     display: flex;
+     justify-content: flex-end;
+   }
+   .display-none{
+     display: none;
+   }
+   .ai-center{
+     align-items: center;
+   }
+   .inline{
+     display: inline-flex;
+   }
 
 
 
