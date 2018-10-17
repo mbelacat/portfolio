@@ -18,7 +18,7 @@
 
 <body>
   <header>
-    <nav class="nav-header-left">
+    <nav class="nav-header-left display-none">
       <ul class="ul-header-left">
         <li></li>
         <li></li>
@@ -27,26 +27,39 @@
       </ul>
     </nav>
     <div>
-      <nav class="nav-header-top">
+      <!--since tablette  -->
+      <nav class="nav-header-top display-none">
         <ul class="ul-header-top">
           <li>A propos</li>
           <li>Compétences</li>
           <li>Portfolio</li>
         </ul>
       </nav>
+      <!--mobile onely  -->
+      <div id="mySidepanel" class="sidepanel" >
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">A propos</a>
+        <a href="#">Compètences</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </div>
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <!--end mobile onely  -->
       <div>
         <h2>Mbela MBEMBA</h2>
         <p>Developpeuse Web Junior</p>
       </div>
-      <nav class="nav-header-right">
-        <ul class="ul-header-right">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </nav>
     </div>
+    <!-- desktop -->
+    <nav class="nav-header-right display-none">
+      <ul class="ul-header-right">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+    <!-- end desktop -->
   </header>
   <section id="apropos">
     <div>
@@ -162,6 +175,15 @@
       </article>
     </div>
   </section>
+  <footer class="display-none">
+    <ul class="ul-footer">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <p> </p>
+  </footer>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
@@ -172,6 +194,17 @@
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script type="text/javascript">
+  /* Set the width of the sidebar to 250px (show it) */
+    function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
+    }
+
+  /* Set the width of the sidebar to 0 (hide it) */
+    function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+    }  
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
