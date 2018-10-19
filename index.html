@@ -11,73 +11,67 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <header>
-    <nav class="nav-header-left display-none">
-      <ul class="ul-header-left">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </nav>
-    <div>
-      <!--since tablette  -->
-      <nav class="nav-header-top display-none">
-        <ul class="ul-header-top">
-          <li>A propos</li>
-          <li>Compétences</li>
-          <li>Portfolio</li>
-        </ul>
-      </nav>
-      <!--mobile onely  -->
-      <div id="mySidepanel" class="sidepanel" >
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">A propos</a>
-        <a href="#">Compètences</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
-      </div>
-      <button class="openbtn" onclick="openNav()">&#9776;</button>
-      <!--end mobile onely  -->
-      <div>
-        <h2>Mbela MBEMBA</h2>
-        <p>Developpeuse Web Junior</p>
-      </div>
-    </div>
-    <!-- desktop -->
-    <nav class="nav-header-right display-none">
-      <ul class="ul-header-right">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </nav>
-    <!-- end desktop -->
+  <header class="flex flex-dir-col  JCSB ai-center">
+        <nav class="nav-header-top display-none-tablette  yellow ">
+          <ul class="ul-header-top inline flex JCSB padding-none">
+            <li>A propos</li>
+            <li>Compétences</li>
+            <li>Portfolio</li>
+          </ul>
+        </nav>
+        <!--mobile onely  -->
+        <nav class="nav-header-top-mobile blue mobile-only ">
+          <div id="mySidepanel" class="sidepanel" >
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">A propos</a>
+            <a href="#">Compètences</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+          </div>
+          <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </nav>
+        <!--end mobile onely  -->
+        <div id="title" class="white flex flex-dir-col ai-center JCCenter">
+          <h2>Mbela MBEMBA</h2>
+          <p>Developpeuse Web Junior</p>
+        </div>
+        <nav class="nav-header-down yellow">
+          <ul class="ul-header-down padding-none">
+            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fas fa-comment"></i></a> </li>
+            <li></li>
+          </ul>
+          <svg class="arrows">
+						<path class="a1" d="M0 0 L30 32 L60 0"></path>
+						<path class="a2" d="M0 20 L30 52 L60 20"></path>
+						<path class="a3" d="M0 40 L30 72 L60 40"></path>
+					</svg>
+        </nav>
   </header>
-  <section id="apropos">
-    <div>
-      <div>
-        <h2>
-      </h2>
+  <section id="apropos" class="flex flex-dir-column ">
+    <div class="title-section yellow ">
+      <div class="grey">
+        <h2 class="lightgrey">
+        </h2>
       </div>
     </div>
-    <div>
-      <div>
-        <h3></h3>
-        <p></p>
-      </div>
+    <div class="grey">
+      <article class="lightgrey flex flex-dir-column lightgrey">
+        <h3 class="grey"></h3>
+        <p class="yellow"></p>
+      </article>
     </div>
 
-  </section>
-  <section id="competences">
-    <div>
+  </section >
+  <section id="competences" class="flex flex-dir-column">
+    <div class="title-section">
       <div>
         <h2>
       </h2>
@@ -107,8 +101,8 @@
       </article>
     </div>
   </section>
-  <section id="experiences">
-    <div>
+  <section id="experiences" class="flex flex-dir-column">
+    <div class="title-section">
       <div>
         <h2>
         </h2>
@@ -144,8 +138,8 @@
         <p></p>
       </article>
   </section>
-  <section id="portfolio">
-    <div>
+  <section id="portfolio" class="flex flex-dir-column">
+    <div class="title-section">
       <div>
         <h2>
       </h2>
@@ -204,7 +198,7 @@
   /* Set the width of the sidebar to 0 (hide it) */
     function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
-    }  
+    }
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
