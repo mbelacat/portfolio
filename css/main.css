@@ -153,7 +153,9 @@ textarea {
      display: none;
    }
   .mobile-only{
-
+  }
+  .wrap{
+    flex-wrap: wrap;
   }
   .ai-center{
      align-items: center;
@@ -164,7 +166,12 @@ textarea {
   .padding-none{
     padding: 0;
   }
-
+.start{
+  /* justify-content: flex-start; */
+}
+.end{
+  justify-content: flex-end;
+}
 
 
 
@@ -186,7 +193,7 @@ textarea {
 
 /* The sidepanel menu */
 .sidepanel {
-    height: 250px; /* Specify a height */
+    height: 280px; /* Specify a height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
@@ -238,7 +245,7 @@ textarea {
 
 
 
-
+/* -----------------  effect card projects */
 
 
 
@@ -358,18 +365,12 @@ header{
 .nav-header-down{
   height: 25%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
 }
 .ul-header-top, .ul-header-down{
   list-style: none;
   width: 100%;
 }
 .ul-header-down{
-  display: flex;
-  justify-content: space-between;
   width: 60%;
 }
 @media screen and (min-width: 600px) {
@@ -403,9 +404,11 @@ header{
     display: flex;
     flex-direction: column;
   }
-
   .title-nav{
     width: 80%;
+  }
+  .title-section{
+
   }
 }
 
@@ -416,25 +419,254 @@ header{
 /*------------------------------- Section start ------------------------------- */
 
 
-#apropos{
-  height: 100vh;
+/* *, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+} */
+
+/* body{
+  background: #f9f9f9;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+} */
+
+
+.container{
+  display: block;
+  width: 47%;
+  padding: 1em 0;
+}
+.container-title-section{
+  height: 80%;
+  width: 60%;
+  text-align: center;
+  /* align-items: center;
+  display: flex;
+  justify-content: center; */
+}
+.title-section{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+article{
+  margin-top:1em;
+}
+@media screen and (min-width: 600px){
+  .container{
+    float: left;
+    width: 33%;
+  }
+  .content-section{
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .container{
+    width: 23%;
+  }
+  .title-section{
+    justify-content: start;
+  }
+  .container-title-section{
+    width: 40%;
+    margin-left: 1em;
+  }
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+.fadeIn-bottom{
+  top: 80%;
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+#portfolio{
+  min-height: 100vh;
+}
+.title-section{
+  width: 100%;
+  height: 20vh;
+}
+.content-section{
+
+}
+
 /*------------------------------- Section end ------------------------------- */
 
 
-/*------------------------------- Section start ------------------------------- */
+/*------------------------------- Section  experience start ------------------------------- */
+
+#experiences{
+  min-height:100vh;
+}
+
+/* article.experience{
+  width: 100%;
+} */
 
 
 
 
 
+ul#time-line{
+			padding: 50px 0;
+			margin: 0;
+			list-style-type: none;
+			/* position: relative; */
+			overflow: hidden;
+		}
+		ul#time-line:after{
+			/* position: absolute; */
+			content: '';
+			height: 100%;
+			width: 5px;
+			border-radius: 20px;
+			background: #303030;
+			left: 0;
+			right: 0;
+			top: 0;
+			pointer-events: none;
+			margin: auto;
+		}
+		ul#time-line li{
+			/* width: 50%; */
+			margin-left: auto;
+			text-align: left;
+			transition: all cubic-bezier(0.68,0.55,0.265,1.55) .5s;
+			transform: rotateX(90deg);
+		}
+		ul#time-line li:nth-child(2n){
+			margin-left: 0;
+			margin-right: auto;
+			text-align: right;
+		}
+		ul#time-line li article{
+			width: 70%;
+			display: inline-block;
+			background: #303030;
+			padding: 30px;
+			margin: 20px;
+			/* border-radius: 30px; */
+			/* position: relative; */
+			color: #fff;
+		}
+		ul#time-line li article:after{
+			content: '';
+			/* position: absolute; */
+			left: auto;
+			right: 100%;
+			top: 45%;
+			border: solid 10px;
+			border-color: transparent #303030 transparent transparent;
+		}
+		ul#time-line li article:before{
+			content: '';
+			/* position: absolute; */
+			height: 20px;
+			width: 20px;
+			background: #303030;
+			border-radius: 50%;
+			left: -30px;
+			top: 45%;
+		}
+		ul#time-line li:nth-child(2n) article:before{
+			right: -30px;
+			left: auto;
+		}
+		ul#time-line li:nth-child(2n) article:after{
+			left: 100%;
+			right: auto;
+			border-color: transparent transparent transparent #303030;
+		}
+		ul#time-line li.visibility {
+			transform: rotateX(0deg) perspective(360px);
+		}
 
 
+@media screen and {
 
+}
 /*------------------------------- Section end ------------------------------- */
 
 
