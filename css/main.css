@@ -183,7 +183,9 @@ textarea {
     list-style: none;
     width: 100%;
   }
-
+  ul{
+    padding: 0;
+  }
 /* ==============================================================================
                           HEADER
 ================================================================================= */
@@ -689,10 +691,16 @@ ul#time-line{
 
 ul.competences{
   display: inline-flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
-
-
+ul.competences.first-line li {
+  width: 20%;
+  text-align: center;
+}
+ul.competences.second-line li{
+  width: 20%;
+  text-align: left;
+}
 
 
 /*------------------------------- Section compétences end ------------------------------- */
