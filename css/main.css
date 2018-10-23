@@ -179,11 +179,10 @@ textarea {
 
 
 
-  .ul-header-top, .ul-header-down{
+  .ul-header-top, .ul-header-down, ul.competences{
     list-style: none;
     width: 100%;
   }
-
 
 /* ==============================================================================
                           HEADER
@@ -563,6 +562,8 @@ article{
 
 #portfolio{
   min-height: 100vh;
+  width: 90%;
+  margin: auto;
 }
 .title-section{
   width: 100%;
@@ -571,7 +572,9 @@ article{
 .content-section{
 
 }
-
+article.portfolio{
+      margin: 1em 0;
+}
 /*------------------------------- Section end ------------------------------- */
 
 
@@ -579,6 +582,8 @@ article{
 
 #experiences{
   min-height:100vh;
+  width: 90%;
+  margin: auto;
 }
 
 /* article.experience{
@@ -622,11 +627,11 @@ ul#time-line{
 			text-align: right;
 		}
 		ul#time-line li article{
-			width: 70%;
+			width: 100%;
 			display: inline-block;
 			background: #303030;
 			padding: 30px;
-			margin: 20px;
+			/* margin: 20px; */
 			/* border-radius: 30px; */
 			/* position: relative; */
 			color: #fff;
@@ -667,22 +672,33 @@ ul#time-line{
 @media screen and {
 
 }
-/*------------------------------- Section end ------------------------------- */
+/*------------------------------- Section experiences end ------------------------------- */
 
 
-/*------------------------------- Section start ------------------------------- */
+/*------------------------------- Section compétences start ------------------------------- */
+#competences{
+  width: 90%;
+  margin: auto;
+}
+.container-article-comptetences{
+  width: 100%;
+}
+.content-section-competences{
+  width: 100%;
+}
+
+ul.competences{
+  display: inline-flex;
+  justify-content: space-between;
+}
 
 
 
 
+/*------------------------------- Section compétences end ------------------------------- */
 
 
-
-
-/*------------------------------- Section end ------------------------------- */
-
-
-/*------------------------------- Section start ------------------------------- */
+/*------------------------------- Section  start ------------------------------- */
 
 
 
