@@ -738,11 +738,26 @@ ul.competences li{
 /*------------------------------- Section compétences end ------------------------------- */
 
 
-/*------------------------------- Section  start ------------------------------- */
+/*------------------------------- Section à propos  start ------------------------------- */
 
+#apropos{
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+}
 
-
-
+aside.avatar{
+  padding-top: 2em;
+  width: 100%;
+  height: 31vh;
+  text-align: center;
+}
+ aside img{
+   border-radius: 194px;
+ }
+#apropos div article{
+  text-align: center
+}
 
 
 /*------------------------------- Section end ------------------------------- */
