@@ -356,7 +356,9 @@ ul, ol{
 	background-color: rgba(0, 0, 0, 0.79);
 	}
 }
-#home{
+
+
+/* #home{
     background: url(https://images.unsplash.com/photo-1461988625982-7e46a099bf4f?dpr=1&auto=format&fit=crop&w=767&h=511&q=80&cs=tinysrgb&crop=);
     background-size: cover;
     background-position: center;
@@ -364,10 +366,10 @@ ul, ol{
     background-repeat: no-repeat;
     color: #cfcfcf;
 
-}
-.content{
+} */
+.content-title{
     position:relative;
-    padding: 20% 0 0;
+    /* padding: 20% 0 0; */
 }
 
 #home #title{
@@ -448,11 +450,6 @@ background: rgba(7, 2, 4, 0.77);
 }
 
 
-
-.nav-header-down{
-  height: 25%;
-  width: 100%;
-}
 
 
 
@@ -685,88 +682,20 @@ article.portfolio{
   width: 100%;
 } */
 
-
-
-
-
-ul#time-line{
-			padding: 50px 0;
-			margin: 0;
-			list-style-type: none;
-			/* position: relative; */
-			overflow: hidden;
-		}
-		ul#time-line:after{
-			/* position: absolute; */
-			content: '';
-			height: 100%;
-			width: 5px;
-			border-radius: 20px;
-			background: #303030;
-			left: 0;
-			right: 0;
-			top: 0;
-			pointer-events: none;
-			margin: auto;
-		}
-		ul#time-line li{
-			/* width: 50%; */
-			margin-left: auto;
-			text-align: left;
-			transition: all cubic-bezier(0.68,0.55,0.265,1.55) .5s;
-			transform: rotateX(90deg);
-		}
-		ul#time-line li:nth-child(2n){
-			margin-left: 0;
-			margin-right: auto;
-			text-align: right;
-		}
-		ul#time-line li article{
-			width: 100%;
-			display: inline-block;
-			background: #303030;
-			padding: 30px;
-			/* margin: 20px; */
-			/* border-radius: 30px; */
-			/* position: relative; */
-			color: #fff;
-		}
-		ul#time-line li article:after{
-			content: '';
-			/* position: absolute; */
-			left: auto;
-			right: 100%;
-			top: 45%;
-			border: solid 10px;
-			border-color: transparent #303030 transparent transparent;
-		}
-		ul#time-line li article:before{
-			content: '';
-			/* position: absolute; */
-			height: 20px;
-			width: 20px;
-			background: #303030;
-			border-radius: 50%;
-			left: -30px;
-			top: 45%;
-		}
-		ul#time-line li:nth-child(2n) article:before{
-			right: -30px;
-			left: auto;
-		}
-		ul#time-line li:nth-child(2n) article:after{
-			left: 100%;
-			right: auto;
-			border-color: transparent transparent transparent #303030;
-		}
-		ul#time-line li.visibility {
-			transform: rotateX(0deg) perspective(360px);
-		}
-
-
-@media screen and {
-
+.container-experiences{
+  width: 100%;
 }
+.content-experiences{
+  width: 90%;
+    /* max-width: 400px; */
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 1em;
+}
+}
+
+
+
 /*------------------------------- Section experiences end ------------------------------- */
 
 
