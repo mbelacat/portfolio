@@ -14,7 +14,6 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -25,120 +24,143 @@
 </head>
 
 <body>
-  <header class="flex flex-dir-col  JCSB ai-center">
-        <nav class="nav-header-top display-none-tablette  yellow ">
-          <ul class="ul-header-top inline flex JCSB padding-none">
-            <li>A propos</li>
-            <li>Compétences</li>
-            <li>Portfolio</li>
-          </ul>
-        </nav>
-        <!--mobile onely  -->
-        <nav class="nav-header-top-mobile blue mobile-only ">
-          <div id="mySidepanel" class="sidepanel" >
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">A propos</a>
-            <a href="#">Compètences</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+
+  <nav id="art-menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-nav ">
+          <!-- for mobile  -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collasped">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+            <a class="navbar-brand" href="">Mb.la MB.MBA</a>
           </div>
-          <button class="openbtn" onclick="openNav()">&#9776;</button>
-        </nav>
-        <!--end mobile onely  -->
-        <div id="title" class="white flex flex-dir-col ai-center JCCenter">
-          <h2>Mbela MBEMBA</h2>
-          <p>Developpeuse Web Junior</p>
+
+          <!-- Navigation Toggling -->
+          <div class="collapse navbar-collapse" id="navbar-collasped">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#home" class="scroll-nav">Home</a></li>
+                  <li><a href="#apropos" class="scroll-nav">A Propos</a></li>
+                  <li><a href="#portfolio" class="scroll-nav">Portfolio</a></li>
+                  <li><a href="#experiences" class="scroll-nav">Experience</a></li>
+                  <li><a href="#competences" class="scroll-nav">Compétences</a></li>
+                  <li><a href="#contact" class="scroll-nav">Contact</a></li>
+              </ul>
+          </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+  </nav>
+  <div id="home" class="text-center">
+      <div class="title">
+          <div class="content">
+              <h1>Bonjour, je suis  <strong><span>Mbela MBEMBA</span></strong></h1>
+              <p class="sub-title">Développeuse web Junior</p>
+              <a href="#portfolio" class="fa fa-angle-down scroll-nav"></a>
+          </div>
+      </div>
+      <svg class="arrows">
+        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+      </svg>
+
+  </div>
+
+
+
+
+
+
+    <!-- <header class="flex flex-dir-col  JCSB ai-center">
+          <nav class="nav-header-top display-none-tablette  yellow ">
+            <ul class="ul-header-top inline flex JCSB padding-none">
+              <li>Home</li>
+              <li>Portfolio</li>
+              <li>Compétences</li>
+              <li>Experience</li>
+              <li>A propos</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+    </header> -->
+
+    <section id="portfolio" class="flex flex-dir-col">
+      <div class="title-section JCCenter flex ai-center grey">
+        <div class="container-title-section flex ai-center JCCenter lightgrey">
+          <h2 class="blue"> Mon Portfolio</h2>
         </div>
-        <nav class="nav-header-down flex start flex-dir-col ai-center yellow">
-          <ul class="ul-header-down flex JCSB padding-none">
-            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href=""><i class="fab fa-github"></i></a></li>
-            <li><a href="#"><i class="fas fa-comment"></i></a> </li>
-            <li></li>
-          </ul>
-          <svg class="arrows">
-						<path class="a1" d="M0 0 L30 32 L60 0"></path>
-						<path class="a2" d="M0 20 L30 52 L60 20"></path>
-						<path class="a3" d="M0 40 L30 72 L60 40"></path>
-					</svg>
-        </nav>
-  </header>
-  <section id="portfolio" class="flex flex-dir-col">
-    <div class="title-section JCCenter flex ai-center grey">
-      <div class="container-title-section flex ai-center JCCenter lightgrey">
-        <h2 class="blue"> Mon Portfolio</h2>
       </div>
-    </div>
-    <div class="content-section wrap flex JCSB">
-      <article class=" portfolio grey container flex">
-          <div class="content">
-            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
-              <div class="content-overlay"></div>
-              <img class="content-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
-              <div class="content-details fadeIn-bottom">
-                <h3 class="content-title">This is a title</h3>
-                <p class="content-text">This is a short description</p>
-              </div>
-            </a>
-          </div>
-      </article>
-      <article class="portfolio grey container flex">
-          <div class="content">
-            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
-              <div class="content-overlay"></div>
-              <img class="content-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
-              <div class="content-details fadeIn-bottom">
-                <h3 class="content-title">This is a title</h3>
-                <p class="content-text">This is a short description</p>
-              </div>
-            </a>
-          </div>
-      </article>
-      <article class=" portfolio grey container flex">
-          <div class="content">
-            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
-              <div class="content-overlay"></div>
-              <img class="content-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
-              <div class="content-details fadeIn-bottom">
-                <h3 class="content-title">This is a title</h3>
-                <p class="content-text">This is a short description</p>
-              </div>
-            </a>
-          </div>
-      </article>
-      <article class=" portfolio grey container flex">
-          <div class="content">
-            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
-              <div class="content-overlay"></div>
-              <img class="content-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
-              <div class="content-details fadeIn-bottom">
-                <h3 class="content-title">This is a title</h3>
-                <p class="content-text">This is a short description</p>
-              </div>
-            </a>
-          </div>
-      </article>
+      <div class="content-section wrap flex JCSB">
+        <article class=" portfolio grey container flex">
+            <div class="content">
+              <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">This is a title</h3>
+                  <p class="content-text">This is a short description</p>
+                </div>
+              </a>
+            </div>
+        </article>
+        <article class="portfolio grey container flex">
+            <div class="content">
+              <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">This is a title</h3>
+                  <p class="content-text">This is a short description</p>
+                </div>
+              </a>
+            </div>
+        </article>
+        <article class=" portfolio grey container flex">
+            <div class="content">
+              <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">This is a title</h3>
+                  <p class="content-text">This is a short description</p>
+                </div>
+              </a>
+            </div>
+        </article>
+        <article class=" portfolio grey container flex">
+            <div class="content">
+              <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">This is a title</h3>
+                  <p class="content-text">This is a short description</p>
+                </div>
+              </a>
+            </div>
+        </article>
 
-    </div>
-  </section>
-  <section id="experiences" class="flex flex-dir-col">
-    <div class="title-section JCCenter flex ai-center grey">
-      <div class="container-title-section flex ai-center JCCenter lightgrey">
-        <h2 class="blue"> Mon Experience</h2>
       </div>
-    </div>
-    <div class="content-section wrap flex JCSpaceA flex-dir-col grey">
+    </section>
+    <section id="experiences" class="flex flex-dir-col">
+      <div class="title-section JCCenter flex ai-center grey">
+        <div class="container-title-section flex ai-center JCCenter lightgrey">
+          <h2 class="blue"> Mon Experience</h2>
+        </div>
+      </div>
+      <div class="content-section wrap flex JCSpaceA flex-dir-col grey">
 
-      <ul id="time-line">
-		    <li>
-          <article class="container experience flex flex-dir-col lightgrey">
-            <h3>Assurance</h3>
-            <h4>AG2R La Mondiale - Solly Azar - Axa (2008 - 2017)</h4>
-            <p>Conseillère clientèle - Gestion de clients - Vente IARD -
-              Obtention de l'habilitation IARD - Gestion de Sinistres
-            </p>
-          </article>
-		    </li>
+        <ul id="time-line">
+  		    <li>
+            <article class="container experience flex flex-dir-col lightgrey">
+              <h3>Assurance</h3>
+              <h4>AG2R La Mondiale - Solly Azar - Axa (2008 - 2017)</h4>
+              <p>Conseillère clientèle - Gestion de clients - Vente IARD -
+                Obtention de l'habilitation IARD - Gestion de Sinistres
+              </p>
+            </article>
+  		    </li>
 	    	<li>
           <article class="container experience flex flex-dir-col lightgrey">
             <h3>Présidente</h3>
@@ -218,6 +240,10 @@
 
 
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
   <script  src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="  crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -229,14 +255,72 @@
   <!--arrow button  -->
   <script type="text/javascript">
   /* Set the width of the sidebar to 250px (show it) */
-    function openNav() {
-    document.getElementById("mySidepanel").style.width = "250px";
-    }
+    // function openNav() {
+    // document.getElementById("mySidepanel").style.width = "250px";
+    // }
 
   /* Set the width of the sidebar to 0 (hide it) */
-    function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
-    }
+    // function closeNav() {
+    // document.getElementById("mySidepanel").style.width = "0";
+    // }
+
+
+
+
+// menu scroll
+    function main() {
+
+        (function () {
+            'use strict';
+          /* ==============================================
+             Page Scrolling
+             =============================================== */
+
+            $('a.scroll-nav').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top - 40
+                        }, 900);
+                        return false;
+                    }
+                }
+            });
+
+            /*====================================
+             Show Menu on Book
+             ======================================*/
+            $(window).bind('scroll', function() {
+                var navHeight = $(window).height() - 100;
+                if ($(window).scrollTop() > navHeight) {
+                    $('.navbar-default').addClass('on');
+                } else {
+                    $('.navbar-default').removeClass('on');
+                }
+            });
+            /* ==============================================
+             Scroll Spy
+             =============================================== */
+            $('body').scrollspy({
+                target: '.navbar-default',
+                offset: 80
+            })
+
+           }());
+          }
+    main();
+
+
+
+
+
+
+
+
+
+
 
 
 
