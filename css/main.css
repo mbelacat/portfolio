@@ -434,7 +434,11 @@ background: rgba(7, 2, 4, 0.77);
 
 
 #home{
-  height: 100vh;
+  width: 100%;
+  height: 105vh;
+  position: fixed;
+  top:0;
+  z-index: -100;
   /* background: url(https://images.unsplash.com/photo-1461988625982-7e46a099bf4f?dpr=1&auto=format&fit=crop&w=767&h=511&q=80&cs=tinysrgb&crop=); */
   background-size: cover;
   background-position: center;
@@ -464,7 +468,7 @@ background: rgba(7, 2, 4, 0.77);
  position: absolute;
  left: 50%;
  margin-left: -30px;
- bottom: 20px;
+ bottom: 25vh;
 }
 
 .arrows path {
@@ -529,13 +533,15 @@ background: rgba(7, 2, 4, 0.77);
 
 .container{
   display: block;
-  width: 47%;
+  width: 100%;
   padding: 1em 0;
 }
 .container-title-section{
   height: 80%;
   width: 60%;
   text-align: center;
+  border-top: 0.5em solid black;
+    border-bottom: 0.5em solid black;
   /* align-items: center;
   display: flex;
   justify-content: center; */
@@ -551,16 +557,13 @@ article{
 @media screen and (min-width: 600px){
   .container{
     float: left;
-    width: 33%;
-  }
-  .content-section{
-    justify-content: space-around;
+    width: 49%;
   }
 }
 
 @media screen and (min-width: 1200px){
   .container{
-    width: 23%;
+    width: 32%;
   }
   .title-section{
     justify-content: start;
@@ -768,7 +771,7 @@ aside.avatar{
 /*------------------------------- Section footer start ------------------------------- */
 main{
   margin-bottom: 25vh;
-  margin-top: -25vh;
+  margin-top: 80vh;
   background-color: rebeccapurple;
 }
 footer{
