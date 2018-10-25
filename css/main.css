@@ -755,11 +755,35 @@ aside.avatar{
  aside img{
    border-radius: 194px;
  }
-#apropos div article{
+#apropos .content-section-apropos article{
   text-align: center
 }
 
-
+@media screen and (min-width:600px) {
+  aside.avatar{
+    width: 40%;
+    height: 60%;
+    justify-content: end;
+    display: flex;
+    padding-top: 3em;
+  }
+  aside img{
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+  }
+  #apropos .content-section-apropos article{
+    width: 50%;
+    text-align: left;
+  }
+  #apropos .content-section-apropos {
+    width: 100%;
+    height: 80vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    }
+  }
 /*------------------------------- Section end ------------------------------- */
 
 /*------------------------------- Section footer start ------------------------------- */
