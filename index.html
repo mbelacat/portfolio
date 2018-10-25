@@ -54,7 +54,7 @@
   <section id="home" class="text-center">
     <div class="title">
         <div class="content-title">
-            <h1>Bonjour, je suis  <strong><span>Mbela MBEMBA</span></strong></h1>
+            <h1><strong><span>Mbela MBEMBA</span></strong></h1>
             <p class="sub-title">Développeuse web Junior</p>
         </div>
     </div>
@@ -256,19 +256,58 @@
       </div>
 
   </section>
+  <section id="contact"class="flexColumn jcCenter aiCenter contact">
+    <div class="title-section JCCenter  flex ai-center grey">
+      <div class="container-title-section flex ai-center JCCenter lightgrey">
+        <h2 class="blue"> Contact</h2>
+      </div>
+    </div>
+    <div>
+      <div>
+      <h2 class="contact">Do you want contact us?</h2>
+      <form id="contact-form" method="post" action="contact.php" role="form">
+        <div class="form-group">
+            <label for="form_name"> Votre Nom </label>
+            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+            <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+            <label for="form_email">Votre Email *</label>
+            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+            <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+            <label for="form_message">Votre Message *</label>
+            <textarea id="form_message" name="message" class="form-control" rows="5" placeholder="Your message" required="required" data-error="Please, leave us a message."></textarea>
+            <div class="help-block with-errors"></div>
+        </div>
+        <input type="submit" class="btn btn-success btn-send" value="Send message">
+        <p class="text-muted">
+            <strong>*</strong> These fields are required.
+        </p>
+      </form>
+      </div>
+      <div class="contact-mail-tel">
+        <ul class="lightgrey">
+          <li><a href="tel:+32662051905"><i class="fas fa-mobile-alt"></i>        : +33 663051905</a></li>
+          <li><a href="mailto:mbela.mbemba@gmail.com?subject= Mail from my portfolio"><i class="fas fa-envelope"></i> : mbela.mbemba@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   </main>
-  <footer class=" flex flex-dir-col ai-center JCCenter lightgrey">
+  <footer class=" flex flex-dir-col ai-center JCCenter green">
     <ul class="ul-footer">
       <li><a href="https://www.linkedin.com/in/mbela-mbemba-458039149/"><i class="fab fa-linkedin-in"></i></a></li>
       <li><a href="https://github.com/mbelacat"><i class="fab fa-github"></i></a></li>
-
+      <li class=" display-tablette"><a href="https://twitter.com/Numacecat"><i class="fab fa-twitter"></i></a></li>
+      <li class=" display-tablette"><a href="mailto:mbela.mbemba@gmail.com?subject= Mail from my portfolio"><i class="fas fa-envelope"></i></a></li>
     </ul>
     <ul class="ul-footer">
-      <li><a href="https://twitter.com/Numacecat"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="mailto:mbela.mbemba@gmail.com?subject= Mail from my portfolio"><i class="fas fa-envelope"></i></a></li>
+      <li class="mobile-only"><a href="https://twitter.com/Numacecat"><i class="fab fa-twitter"></i></a></li>
+      <li class="mobile-only"><a href="mailto:mbela.mbemba@gmail.com?subject= Mail from my portfolio"><i class="fas fa-envelope"></i></a></li>
     </ul>
-    <p>créé par Mbela Mbemba </p>
   </footer>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -284,7 +323,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
   <script  src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="  crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
@@ -293,15 +332,7 @@
 
   <!--arrow button  -->
   <script type="text/javascript">
-  /* Set the width of the sidebar to 250px (show it) */
-    // function openNav() {
-    // document.getElementById("mySidepanel").style.width = "250px";
-    // }
 
-  /* Set the width of the sidebar to 0 (hide it) */
-    // function closeNav() {
-    // document.getElementById("mySidepanel").style.width = "0";
-    // }
 
 
 

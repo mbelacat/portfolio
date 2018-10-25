@@ -189,13 +189,30 @@ textarea {
   }
   ul{
     padding: 0;
+    list-style: none;
   }
 /* ==============================================================================
                           commun rules
 ================================================================================= */
-/*----------------------nav collapse ------------------------------- */
+@keyframes color {
+	0%   { background: #33CCCC; }
+	20%  { background: #33CC36; }
+	40%  { background: #B8CC33; }
+	60%  { background: #FCCA00; }
+	80%  { background: #33CC36; }
+	100% { background: #33CCCC; }
+}
 
+footer, #home {
+  background: #33CCCC; /* Fallback */
+  animation: color 9s infinite linear;
+  text-align: center;
+  padding: 2em;
+}
 
+i{
+  color: #9ad0c2;
+}
 
 
 
@@ -467,7 +484,7 @@ background: rgba(7, 2, 4, 0.77);
 }
 
 .arrows path {
- stroke: #2994D1;
+ stroke: #f5f5f5;
  fill: transparent;
  stroke-width: 1px;
  animation: arrow 2s infinite;
@@ -786,11 +803,41 @@ aside.avatar{
   }
 /*------------------------------- Section end ------------------------------- */
 
+/*------------------------------- Section Contact Start ------------------------------- */
+
+
+
+#contact {
+    min-height: 110vh;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+#contact h2.contact {
+  /* width: 100%; */
+  text-align: center;
+}
+.contact-mail-tel{
+  background-color: black;
+  padding: 2em 0;
+}
+.contact-mail-tel ul li {
+  padding: 1em 0;
+}
+.contact-mail-tel ul li a i{
+  font-size: 2em;
+}
+form#contact-form{
+  /* width: 100%; */
+}
+/*------------------------------- Section Contact End ------------------------------- */
+
 /*------------------------------- Section footer start ------------------------------- */
 main{
   margin-bottom: 25vh;
   margin-top: 80vh;
-  background-color: rebeccapurple;
+  background-color: white;
 }
 footer{
   width: 100%;
@@ -808,10 +855,14 @@ footer{
   width: 50%;
   text-align: center;
 }
-.ul-footer li i{
+.ul-footer li a i{
   font-size: 2em;
   padding: 1em;
 }
+.ul-footer li a {
+  color: white;
+}
+
 
 /*------------------------------- Section end ------------------------------- */
 
